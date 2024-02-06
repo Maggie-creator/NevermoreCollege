@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <title>History</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/logo2.png">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel:wght@400;600&family=Cormorant&family=Playfair+Display&family=Poltawski+Nowy&display=swap" rel="stylesheet">
+  
+<!--Styles for History-->
+<style>
+h1 {
+		font-family: 'Cinzel', serif;
+		font-size: 60px;
+	}
+
+	h3 {
+		font-family: 'Castoro Titling', cursive;
+		font-size: 26px;
+	}
+
+	h4 {
+		font-family: 'Cormorant', serif;
+		font-size: 25px;
+	}
+	h5 {
+		font-family: 'Playfair Display', serif;
+		font-size: 22px;
+	}
+
+	p {
+	  font-family: 'Poltawski Nowy', serif;
+	  font-size: 18px;
+	}
+	
+	.fas { 
+		font-family:FontAwesome; 
+		font-weight:900;
+	  }	
+</style>
+
+<!--History Section CSS-->
+<style>
+/* The school history timeline */
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The school history timeline */
+.main-timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #4a4655;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles to appear on the timeline */
+.timeline-2::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #4a4655;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* The container to appear on the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* The container to appear on the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/*Arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* The circle for containers on the right side */
+.right-2::after {
+  left: -15px;
+}
+
+
+/* Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Ensuring the chosen arrows are pointing left */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Ensuring the circles appear at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Containers on the right to mimic the containers on the left */
+  .right-2 {
+    left: 0%;
+  }
+}
+</style>
+  
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+        <img
+          src="images/logo2.png"
+          height="20"
+          alt="Nevermore Logo"
+          loading="lazy">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="curriculum.html">Curriculum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of navigation bar -->
+
+<!-- School's Main Image-->
+	<img src="images/211014141738-04-european-castles-frederic-chaubin-book-restricted.jpg" alt="Nevermore College in winter" title="Nevermore College in Winter" style="width:100%;height:auto;">
+<div class="container-fluid p-5 bg-secondary text-white text-center">
+
+<!-- School's Name-->
+  <h2><strong>History</strong></h2>
+</div>
+
+
+<!--History Section source:-->
+<section style="background-color: #F0F2F5;">
+  <div class="container py-5">
+    <div class="main-timeline-2">
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="images/GettyImages-113488196-1200x961.jpg" class="card-img-top" alt="Edgar Allan Poe">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Edgar Allan Poe establishes Nevermore Academy</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 1791</p>
+            <p class="mb-0">A progenitor of horror and science fiction, Edgar Allan Poe, lies a foundation for Nevermore College.An avid advocate of the literary craft and magic, the famous American poet believed educating young minds should occur in the undisturbed environmnent, opting for a mysterious chateau belonging to Lady Addams in the forest-enclosed Nevermore Hills. The first unofficial group of 12 students gathered in November 1791 to study Practical Witchcraft course.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 right-2">
+        <div class="card">
+          <img src="images/file-20210927-19-145iut6.avif" class="card-img-top" alt="The Certificate of the Clairvoyant Physician">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">The commencement of tertiary studies in Magic &amp; Sorcery</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 1883</p>
+            <p class="mb-0">As the first college in the history of Nevermore, the school opened its first official program in Magic &amp; Sorcery in the midst of the Industrial Revolution. Initially  frowned-up, the programme enjoyed a intense growth in popularity with numerous alumni trained as Professional Witches,Sorcerers and Clairvoyant Physicians.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="images/FEATURES-Steamboat_Ladies-PHOTO-VIA-GIRTON-COLLEGE-CAMBRIDGE.jpg" class="card-img-top" alt="Nevermore's Female Alumni">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">The first college in Nevermore to accept female students</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 1887</p>
+            <p class="mb-0">In the midst of the suffrage revolution, Nevermore Academy took a vote to accept female studies into its halls. Declared "an ancient backbone of all magical and occult", women were offered the same opportunities to study as their male counterparts, and were allowed to take examinations in order to prove their intellectual capacity. </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 right-2">
+        <div class="card">
+          <img src="images/national-cancer-institute-OHx5zVsv_gY-unsplash.jpg" class= "card-img-top" alt="Reference staff at the computer in the Literature Section">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4"> Liberal Arts &amp; Teaching Programs open in the academy </h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 1974</p>
+            <p class="mb-0">With well-established programs in Magic &amp; Sorcery, Nevermore Academy paid tribute to its literary founder, expanding its offer to Liberal Arts &amp; Communication and Education & Teaching programmes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="images/logo_large.png" class="card-img-top" alt="Nevermore College Logo">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Nevermore Academy changes into Nevermore College</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2013</p>
+            <p class="mb-0">After a successful accreditation of all its programs and an agreement with The Miscatonic University, Nevermore Academy transitioned into Nevermore College.Owing to the dedicaion of its brilliant staff, teaching body and talented students, Nevemore College continues to develop and offer programmes based on ancient knowledge and experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of History Section-->
+		
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span><b>CONNECT WITH US:</b></span>
+    </div>
+    <!-- Left  -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.linkedin.com/in/malgorzatamika" class="me-4 text-reset">
+        <i class="fa fa-brands fa-linkedin fa-beat-fade fa-sm"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100001882155591" class="me-4 text-reset">
+        <i class="fa fa-brands fa-facebook fa-beat-fade fa-sm"></i>
+      </a>
+	  <a href="https://www.instagram.com/malgorzata_mikart/" class="me-4 text-reset">
+        <i class="fa fa-brands fa-instagram fa-beat-fade fa-sm"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social Media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Nevermore College Pty Ltd.
+          </h6>
+          <p>
+            The college of humanities and applied magical arts.
+          </p>
+		  <br>
+		  <p>
+		  The list of references for the creation of the website are available <a href="references.docx">here</a>.
+		  </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="history.html" class="text-reset">History</a>
+          </p>
+          <p>
+            <a href="curriculum.html" class="text-reset">Curriculum</a>
+          </p>
+          <p>
+            <a href="events.html" class="text-reset">Events</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fa fa-home"></i> Nevermore, DWIN 209, NEVERLAND</p>
+          <p><i class="fa fa-envelope"></i><a href="mailto:inquiry@nevermorecollege.com"> inquiry@nevermorecollege.com</a></p>
+          <p><i class="fa fa-phone"></i> + 00 123 456 789</p>
+          <p><i class="fa fa-print"></i> + 00 987 654 321</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(238,220,218,255);">
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Copyright &copy; 1791-2023 Nevermore College Pty Ltd | All Rights Reserved</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

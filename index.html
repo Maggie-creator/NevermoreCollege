@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <title>Nevermore College</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/logo2.png">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel:wght@400;600&family=Cormorant&family=Playfair+Display&family=Poltawski+Nowy&display=swap" rel="stylesheet">
+  
+<!--Styles-->
+<style>
+	h1 {
+		font-family: 'Cinzel', serif;
+		font-size: 60px;
+	}
+
+	h3 {
+		font-family: 'Castoro Titling', cursive;
+		font-size: 26px;
+	}
+
+	h4 {
+		font-family: 'Cormorant', serif;
+		font-size: 25px;
+	}
+	h5 {
+		font-family: 'Playfair Display', serif;
+		font-size: 22px;
+	}
+
+	p {
+	  font-family: 'Poltawski Nowy', serif;
+	  font-size: 18px;
+	}
+	
+	.fas { 
+		font-family:FontAwesome; 
+		font-weight:900;
+	  }	
+</style>
+
+<!--News-->
+<style>
+	body{margin-top:20px;}
+
+	.section {
+		padding: 100px 0;
+		position: relative;
+	}
+	.gray-bg {
+		background-color: #bfc7d2;
+	}
+	/* News Section
+	---------------------*/
+	.news-grid {
+	  margin-top: 15px;
+	  margin-bottom: 15px;
+	}
+	.news-grid .news-img {
+	  position: relative;
+	  border-radius: 5px;
+	  overflow: hidden;
+	}
+	.news-grid .news-img .date {
+	  position: absolute;
+	  background: #b9a4ad;
+	  color: #ffffff;
+	  padding: 8px 15px;
+	  left: 0;
+	  top: 10px;
+	  font-size: 14px;
+	}
+	.news-grid .news-info {
+	  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+	  border-radius: 5px;
+	  background: #ffffff;
+	  padding: 20px;
+	  margin: -30px 20px 0;
+	  position: relative;
+	}
+	.news-grid .news-info h5 {
+	  font-size: 22px;
+	  font-weight: 500;
+	  color: #4a4655;
+	  margin: 0 0 10px;
+	}
+	.news-grid .news-info h5 a {
+	  color: #3a3973;
+	}
+	.news-grid .news-info p {
+	  margin: 0;
+	}
+	.news-grid .news-info .btn-bar {
+	  margin-top: 20px;
+	}
+	img.rounded-corners {
+     border-radius: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+        <img
+          src="images/logo2.png"
+          height="20"
+          alt="Nevermore Logo"
+          loading="lazy">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="curriculum.html">Curriculum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of navigation bar -->
+
+<!-- School's Main Images in the Slider-->
+<div id="carouselImages" class="carousel slide carousel-fade" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/cederic-vandenberghe-21DP3hytVHw-unsplash.jpg" class="d-block w-100" alt="Nevermore College at dusk">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Mystery</h5>
+        <p>The natural environment that encourages learning.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/pexels-tima-miroshnichenko-9572672.jpg" class="d-block w-100" alt="A student at the library">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Knowledge</h5>
+        <p>Uncover new layers of information in the 200-year-old library.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/pexels-rodnae-productions-7978061.jpg" class="d-block w-100" alt="The Book of Advanced Magic">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Magic</h5>
+        <p>Explore the world that transcends reality.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Grey strap-->
+<div class="container-fluid p-5 bg-secondary text-white text-center">
+
+<!-- School's Name-->
+  <h1><strong>Nevermore College</strong></h1>
+  <p style="font-family:playfair display">Unitas Est Invicta</p> 
+</div>
+
+<!--Section: About the College-->
+<br>
+<br>
+
+<div class="container overflow-hidden">
+  <div class="row gx-5">
+    <div class="col">
+    <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+      <img class="img-fluid rounded" src="images/pexels-pixabay-460659.jpg" alt= "School's Image">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <h3><strong>About the College </strong></h3>
+	<h5><em> Who We Are</em></h5>
+	<br>
+     <p>
+      Through an innovative choice of University Foundation Studies and Diploma/Advanced Diploma programmes, the College provides pathways to university. 
+	  Small class sizes and personalised academic attention provide a supportive environment for students to flourish in their tertiary studies.
+      Our relationship with The Miscatonic University allows us to provide high-quality education and resources to our students.This is why students from all around the world choose The College and The Miscatonic University as their top educational options in Australia.
+    </p>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h3 style="text-align:center;"><b>What We Do...</b></h3>
+
+<!--Section: Education Section-->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Liberal Arts &amp; Communication</h3>
+      <h4>With an online communication or liberal arts degree, you can gain highly transferrable skills and knowledge.</h4>
+      <p>Nevermore College's liberal arts programmes offer a well-rounded education that may be easily customised with a range of minors. Improve your communication abilities; broaden your worldview through cultural studies, history, and psychology; or address contemporary challenges through social and political science. A liberal arts degree or certificate online can help you build essential abilities for success in any career.
+      </p>
+	  <a href="curriculum.html" class="btn btn-outline-info">Learn more</a>
+    </div>
+    <div class="col-sm-4">
+      <h3>Sorcery &amp; Applied Magical Arts</h3>
+      <h4>Immerse yourself in the ancient art of witchcraft and earn an advanced diploma or a degree in applied magical arts.</h4>
+      <p>The empirical reality confronts professionals with limitations deemed impossible to overcome. Discover the ways to alter your personal and professional life by implementing the ancient and reliable art of witchcraft to offer original solutions and develop in-demand skills for a competitive edge in any industry.</p>
+	   <a href="curriculum.html" class="btn btn-outline-info">Learn more</a>
+    </div>
+    <div class="col-sm-4">
+      <h3>Education &amp; Teaching</h3>        
+      <h4>Earn an online education and teaching graduate degree or certificate from Nevermore College, a distance education leader.</h4>
+      <p>The age of technology has confronted educators with more obstacles than ever before, and there is a growing demand for qualified instructors and school  administrators.Learn how teachers and other education professionals may better use technology in the classroom to improve student results. And, with lifetime access to our powerful portfolio of career services, you'll be equipped to achieve your professional ambitions.</p>
+	   <a href="curriculum.html" class="btn btn-outline-info">Learn more</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<section class="section gray-bg" id="news">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 text-center">
+                        <div class="section-title">
+                            <h3><strong>Latest News</strong></h3>
+                            <p> From magic-infused life of Nevermore College and beyond...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="news-grid">
+                            <div class="news-img">
+                                <div class="date">15 JAN</div>
+                                    <img src="images/magic%20potion.jpg" class="rounded-corners" title="Magic Potion" alt="Magic Potion">
+                            </div>
+                            <div class="news-info">
+                                <h5><b>Magic Potions for the Summer</b></h5>
+                                <p> Summer is a perfect time for romance and experimentation. Get enchanted by the new potion recipes straight from Nevermore's Labs</p>
+                                <div class="btn-bar">
+								<a href="mockarticle.html" class="btn btn-outline-secondary btn-sm" role="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="news-grid">
+                            <div class="news-img">
+                                <div class="date">01 APR</div>
+                                    <img src="images/witch1.jpg" class="rounded-corners" title="Student Witch" alt="Student Witch">
+                            </div>
+                            <div class="news-info">
+                                <h5><b>Nevermore's Student Wins NSW Witchery Constest</b></h5>
+                                <p> NSW Witchery Contest has seen its brightest star this fall. See how our student, Bianca Addams, made the judges spellbound.</p>
+                                <div class="btn-bar">
+								<a href="mockarticle.html" class="btn btn-outline-secondary btn-sm" role="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="news-grid">
+                            <div class="news-img">
+                                <div class="date">16 APR</div>
+                                    <img src="images/tarot.jpg" class="rounded-corners" title="Tarot Cards" alt="Tarot Cards">
+                            </div>
+                            <div class="news-info">
+                                <h5><b>Short Courses in Tarot Reading</b></h5>
+                                <p> The amateours of Tarot rejoice! Nevermore College opens up 4-week courses in Card Magic &amp; Tarot Reading.</p>
+                                <div class="btn-bar">
+								<a href="mockarticle.html" class="btn btn-outline-secondary btn-sm" role="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span><b>CONNECT WITH US:</b></span>
+    </div>
+    <!-- Left  -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.linkedin.com/in/malgorzatamika" class="me-4 text-reset">
+        <i class="fa fa-brands fa-linkedin fa-beat-fade fa-sm"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100001882155591" class="me-4 text-reset">
+        <i class="fa fa-brands fa-facebook fa-beat-fade fa-sm"></i>
+      </a>
+	  <a href="https://www.instagram.com/malgorzata_mikart/" class="me-4 text-reset">
+        <i class="fa fa-brands fa-instagram fa-beat-fade fa-sm"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social Media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Nevermore College Pty Ltd.
+          </h6>
+          <p>
+            The college of humanities and applied magical arts.
+          </p>
+		  <br>
+		  <p>
+		  The list of references for the creation of the website are available <a href="references.docx">here</a>.
+		  </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="history.html" class="text-reset">History</a>
+          </p>
+          <p>
+            <a href="curriculum.html" class="text-reset">Curriculum</a>
+          </p>
+          <p>
+            <a href="events.html" class="text-reset">Events</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fa fa-home"></i> Nevermore, DWIN 209, NEVERLAND</p>
+          <p><i class="fa fa-envelope"></i><a href="mailto:inquiry@nevermorecollege.com"> inquiry@nevermorecollege.com</a></p>
+          <p><i class="fa fa-phone"></i> + 00 123 456 789</p>
+          <p><i class="fa fa-print"></i> + 00 987 654 321</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(238,220,218,255);">
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Copyright &copy; 1791-2023 Nevermore College Pty Ltd | All Rights Reserved</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
